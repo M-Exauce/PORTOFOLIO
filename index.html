@@ -19,15 +19,17 @@
                     <li><a href="#">PROJECT</a></li>
                 </ul>
             </div>
-            <img src="image/bars.png" alt="bars" class="bars">  
-            <img src="image/close.png" alt="close" class="close">
+                <div class="toogle">
+                    <img src="image/bars.png" alt="bars" class="bars">  
+                    <img src="image/close.png" alt="close" class="close">
+                </div>
         </nav>
         <div class="detel">
             <h1>I,m Makele <span>Exaucé</span></h1>
             <p>This is my official portfolio to show all the details of my skills
                 <br> and works of web and computer development.
             </p>
-            <a href="CV/CV_2023_Exaucé_Makele.pdf" download="Makele-Exauce_CV">DOWLOAD CV</a>
+            <a href="CV/CV_Exaucé_Makele.pdf" download>DOWLOAD CV</a>
         </div>
         <div class="images">
             <img src="image/font2.png" class = "shape">
@@ -36,14 +38,12 @@
     </div>
 </body>
     <script>
+        // menu bars ouverture
         const a = document.querySelector(".bars")
         const b = document.querySelector(".nav-link")
  
         a.addEventListener('click',()=>{
         b.classList.toggle('mobile-menu')
-        })
-       a.addEventListener('click',()=>{
-        b.classList.toggle('switch')
         })
 
         const c = document.querySelector(".images")
@@ -51,10 +51,15 @@
         c.classList.toggle('flou')
         })
 
-        const aa = document.querySelector(".close")
-        aa.addEventListener('click',()=>{
-        b.classList.toggle('cc')
+        const aa = document.querySelector(".toogle")
+        a.addEventListener('click',()=>{
+        aa.classList.toggle('switch')
         })
 
+        // menu close fermeture
+        const d = document.querySelector(".close")
+        d.addEventListener('click',()=>{
+        b.classList.toggle('fermer')
+        })
     </script>
 </html>
