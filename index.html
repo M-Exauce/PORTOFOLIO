@@ -13,13 +13,14 @@
             <img src="image/settings.png" class="logo">
             <div class ="nav-link ">
                 <ul>
-                    <li><a href="#">HOME</a></li>
+                    <li><a href="#" class ="buttonH">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">LANGAGES</a></li>
                     <li><a href="#">PROJECT</a></li>
                 </ul>
             </div>
-            <img src="image/bars.png" alt="bars" class="bars">   
+            <img src="image/bars.png" alt="bars" class="bars">  
+            <img src="image/close.png" alt="close" class="close">
         </nav>
         <div class="detel">
             <h1>I,m Makele <span>Exaucé</span></h1>
@@ -41,10 +42,18 @@
         a.addEventListener('click',()=>{
         b.classList.toggle('mobile-menu')
         })
+       a.addEventListener('click',()=>{
+        b.classList.toggle('switch')
+        })
 
         const c = document.querySelector(".images")
         a.addEventListener('click',()=>{
         c.classList.toggle('flou')
+        })
+
+        const aa = document.querySelector(".close")
+        aa.addEventListener('click',()=>{
+        b.classList.toggle('cc')
         })
 
     </script>
