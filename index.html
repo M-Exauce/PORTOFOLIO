@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav class ="navbar" >
+            <img src="image/settings.png" class="logo">
+            <div class ="nav-link ">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">LANGAGES</a></li>
+                    <li><a href="#">PROJECT</a></li>
+                </ul>
+            </div>
+            <img src="image/bars.png" alt="bars" class="bars">   
+        </nav>
+        <div class="detel">
+            <h1>I,m Makele <span>Exaucé</span></h1>
+            <p>This is my official portfolio to show all the details of my skills
+                <br> Details and works of web and computer development
+            </p>
+            <a href="#">DOWLOAD CV</a>
+        </div>
+        <div class="images">
+            <img src="image/font2.png" class = "shape">
+             <img src="image/man.png" class = "man">
+        </div>
+    </div>
+</body>
+    <script>
+        const a = document.querySelector(".bars")
+        const b = document.querySelector(".nav-link")
+ 
+        a.addEventListener('click',()=>{
+        b.classList.toggle('mobile-menu')
+        })
+
+        const c = document.querySelector(".images")
+        a.addEventListener('click',()=>{
+        c.classList.toggle('flou')
+        })
+
+    </script>
+</html>
