@@ -1,69 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
     <div class="hero">
-        <nav class ="navbar" >
-            <img src="image/settings.png" class="logo">
-            <div class ="nav-link ">
-                <ul>
-                    <li><a href="#" class ="buttonH">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">LANGAGES</a></li>
-                    <li><a href="#">PROJECT</a></li>
-                </ul>
+      <nav class="navbar" id="home">
+        <img src="image/settings.png" class="logo" />
+        <div class="nav-link" id="wrapper" onclick="hide()">
+          <ul>
+            <li><a href="#home" class="buttonH">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#langages">LANGAGES</a></li>
+            <li><a href="#project">PROJECT</a></li>
+          </ul>
+        </div>
+        <div class="toogle">
+          <img src="image/bars.svg" alt="bars" class="bars" />
+        </div>
+      </nav>
+      <div class="detel">
+        <h1>I,m Makele <span>Exaucé</span></h1>
+        <p>
+          This is my official portfolio to show all the details of my skills
+          <br />
+          and works of web and computer development.
+        </p>
+        <a href="CV/CV_Exaucé_Makele.pdf" download>DOWLOAD CV</a>
+      </div>
+      <div id="about">
+        <h1>About</h1>
+        <h2>A little about me...</h2>
+        <p>
+          Dynamic and passionate about computer science, I followed a
+          progressive training in this field I followed a 2 years progressive
+          training in this field before specializing in System and Network
+          Analysis for my third year of degree. Versatile and always eager to
+          learn, I am as much at ease in web development as in system
+          administration.
+        </p>
+      </div>
+        <div id="lang">
+            <h1>Langages</h1>
+        </div>
+            <div id="langages" class="svg">
+                <img src="image/bash.svg"  alt="" />
+                <img src="image/c.svg" alt="" />
+                <img src="image/css.svg" alt="" />
+                <img src="image/html5.svg" alt="" />
+                <img src="image/java.svg" alt="" />
+                <img src="image/javascript.svg" alt="" />
+                <img src="image/ocaml.svg" alt="" />
+                <img src="image/python.svg" alt="" />
+                <img src="image/react.svg" alt="" />
+                <img src="image/sql.svg" alt="" />
             </div>
-                <div class="toogle">
-                    <img src="image/bars.png" alt="bars" class="bars">  
-                    <img src="image/close.png" alt="close" class="close">
-                </div>
-        </nav>
-        <div class="detel">
-            <h1>I,m Makele <span>Exaucé</span></h1>
-            <p>This is my official portfolio to show all the details of my skills
-                <br> and works of web and computer development.
-            </p>
-            <a href="CV/CV_Exaucé_Makele.pdf" download>DOWLOAD CV</a>
+
+        <div id="project">
+            <h1 class="proj">Project</h1>
+            <a href="https://github.com/M-Exauce">
+                <img src="image/github.svg" alt="" class="git" />
+            </a>
         </div>
-        <div class="images">
-            <img src="image/font2.png" class = "shape">
-             <img src="image/man.png" class = "man">
-        </div>
+    
+
+      <div class="images">
+        <img src="image/font2.png" class="shape" />
+        <img src="image/man.png" class="man" />
+      </div>
     </div>
-</body>
-    <script>
-        // menu bars ouverture
-        const a = document.querySelector(".bars")
-        const b = document.querySelector(".nav-link")
- 
-        a.addEventListener('click',()=>{
-        b.classList.toggle('mobile-menu')
-        })
-
-        const c = document.querySelector(".images")
-        a.addEventListener('click',()=>{
-        c.classList.toggle('flou')
-        })
-
-        const aa = document.querySelector(".toogle")
-        a.addEventListener('click',()=>{
-        aa.classList.toggle('switch')
-        })
-
-        // menu close fermeture
-        const d = document.querySelector(".close")
-        d.addEventListener('click',()=>{
-        b.classList.toggle('fermer')
-        })
-
-        d.addEventListener('click',()=>{
-        aa.classList.toggle('disparaitre')
-        })
-    </script>
+  </body>
 </html>
