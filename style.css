@@ -214,12 +214,24 @@ img.git:hover {
     rotate3d(0, 1, 0.5, 3.142rad)
 }
 
-.svg a:hover {
-  color: #225784;
-  background: white;
-  box-shadow: 0 0 0 #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-transition-delay: 0.5s;
+ 
+
+.git a{
+   animation: 3s linear 1s infinite alternate slidein;
 }
+.svg a{
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(10deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 div.nav-link.mobile-menu.active {
   position: absolute;
   background-color: rgb(255, 255, 255);
