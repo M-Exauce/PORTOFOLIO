@@ -212,9 +212,13 @@ img.git:hover {
     cursor: pointer;
     transform:rotate3d(0, 1, 0.5, 3.142rad)
     rotate3d(0, 1, 0.5, 3.142rad)
+}
 
-    
-
+.svg a:hover {
+  color: #225784;
+  background: white;
+  box-shadow: 0 0 0 #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+transition-delay: 0.5s;
 }
 div.nav-link.mobile-menu.active {
   position: absolute;
@@ -1288,13 +1292,14 @@ div#lang h1{
   font-weight: bold;
  align-content:center;
   justify-content: center;
+  padding-bottom: 8%;
 }
 
 .svg {
   align-items: center;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 15%));
-  grid-template-rows: repeat(2, 20%);
+  grid-template-rows: repeat(2, 25%);
   padding-left:5%;
 }
 
@@ -1305,8 +1310,8 @@ div#langages.svg {
   
 /*taille logo langagages de programmation*/
 div#langages.svg img {
-width: 60px;
-height: 60px;
+width: 110px;
+height: 110px;
 }
 
 
