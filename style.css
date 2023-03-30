@@ -217,19 +217,20 @@ img.git:hover {
  
 
 .git a{
-   animation: 3s linear 1s infinite alternate slidein;
-}
-.svg a{
-    animation: rotation 2s infinite linear;
+   transition: all 0.5s linear;
+    transform-style: preserve-3d;
 }
 
-@keyframes rotation {
-    from {
-        transform: rotate(10deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.git a:hover {
+  transform: rotateY(360deg);
+}
+.svg a{
+    transition: all 0.5s linear;
+    transform-style: preserve-3d;
+}
+
+.svg a:hover {
+  transform: rotateY(180deg);
 }
 
 div.nav-link.mobile-menu.active {
