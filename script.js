@@ -22,19 +22,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         document.querySelector(e.target.getAttribute("href")).scrollIntoView({
             behavior: "smooth",
         });
-
-    });
-    a.addEventListener("click", () => {
-      b.classList.toggle("mobile-menu");
     });
 });
 
 
 
-function hide() {
-    let z = document.getElementById("wrapper");
-    if (z.className === "nav-link mobile menu") {
-        z.className = "nav-link";
-    }
-    
-}
