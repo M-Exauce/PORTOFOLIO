@@ -864,7 +864,7 @@ font-size: 140%;
 div#lang {
     position: relative;
     width: 100%;
-    top: 150px;
+    top: 220px;
 }
 
 div#lang h1{
@@ -875,7 +875,7 @@ div#lang h1{
   font-weight: bold;
  align-content:center;
   justify-content: center;
-  padding-top: 15%;
+  padding-top: 40%;
 }
 
 .svg {
