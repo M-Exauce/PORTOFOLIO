@@ -96,6 +96,7 @@ span {
   display: inline-block;
   margin: 30px 0;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 #about,
