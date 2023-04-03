@@ -260,8 +260,8 @@ div.nav-link.mobile-menu.active {
     height: 25%;
     position: absolute;
     left: 60%;
-    bottom: 2%;
-    transform: translateX(-30%);
+    bottom: 5%;
+    transform: translateX(-40%);
     transition: bottom 1s, left 1s;
   }
 
