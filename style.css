@@ -350,6 +350,7 @@ div.nav-link.mobile-menu.active {
     display: inline-block;
     margin: 5% 0;
     border-radius: 5px;
+    cursor: pointer;
   }
 .detel p {
   color: #555;
@@ -579,6 +580,7 @@ img.git {
     display: inline-block;
     margin: 5% 0;
     border-radius: 5px;
+    cursor: pointer;
   }
 .detel p {
   color: #555;
@@ -812,6 +814,7 @@ font-size: 140%;
     display: inline-block;
     margin: 20px 0;
     border-radius: 5px;
+    cursor: pointer;
   }
 
  
@@ -933,7 +936,6 @@ img.git {
   padding-top: 30%;
   padding-left: 50%;
   cursor: pointer;
-  margin-left: %;
 }
 
 
