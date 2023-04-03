@@ -218,7 +218,7 @@ img.git:hover {
  
 
 .git a{
-   transition: all 0.5s linear;
+   transition: all 0.8s linear;
     transform-style: preserve-3d;
 }
 
@@ -226,12 +226,12 @@ img.git:hover {
   transform: rotateY(360deg);
 }
 .svg a{
-    transition: all 0.5s linear;
+    transition: all 0.8s linear;
     transform-style: preserve-3d;
 }
 
 .svg a:hover {
-  transform: rotateY(180deg);
+  transform: rotateY(360deg);
 }
 
 div.nav-link.mobile-menu.active {
@@ -730,7 +730,7 @@ justify-content:flex-end;
 justify-items: center;
 padding-top: 5%;
 padding-right: 5%;
-font-size: 110%;
+font-size: 80%;
 
 }
 
